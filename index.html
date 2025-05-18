@@ -68,10 +68,13 @@
         <h3>🧰 Performing the Manual Filament Change on Your Printer</h3>
         <ol>
           <li>The printer will <strong>pause automatically</strong> at the designated layer and display
-            a message, likely stating "Printing was paused by the user" or similar. <strong>DO NOT press 'Resume Printing' on this
+            a message, likely stating "Printing was paused by the user" or similar. <strong>DO NOT press 'Resume
+              Printing' on this
               screen!</strong></li>
           <li>Instead of resuming, locate and press the <strong>'X' button</strong> (or
             'Cancel' / 'Back' depending on your printer's UI) to exit this prompt.
+            <img src="resources/images/pause_screen.jpg" alt="Screenshot of Bambu Studio filament selection"
+              style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
           </li>
           <li>Navigate to the <strong>'Filament' section</strong> on your printer's
             screen.
@@ -79,11 +82,15 @@
           <li>Perform the <strong>manual filament change</strong> following your printer's usual
             procedure. This typically involves unloading the old filament, loading the new filament, and purging any old
             material until the new color is clean.
+            <img src="resources/images/swap_screen.jpg" alt="Screenshot of Bambu Studio filament selection"
+              style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
           </li>
           <li>Once the filament change is complete, return to the <strong>main print screen</strong> on
             your printer.</li>
           <li>Finally, press <strong>'Resume'</strong> to continue your print. The printer will
             seamlessly pick up where it left off with the new filament!</li>
+          <img src="resources/images/final_print.jpg" alt="Screenshot of Bambu Studio filament selection"
+            style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
         </ol>
       </div>
 
@@ -299,13 +306,13 @@
         helpSection.style.display = "none"; // Hide the section
       }
     });
-    
-  kofiWidgetOverlay.draw('pressntr', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
+
+    kofiWidgetOverlay.draw('pressntr', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
   </script>
 </body>
 
