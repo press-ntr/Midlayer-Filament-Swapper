@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G-code Modifier</title>
+  <title>Filament Swapper</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 </head>
 
 <body>
@@ -67,12 +68,12 @@
         <h3>🧰 Performing the Manual Filament Change on Your Printer</h3>
         <ol>
           <li>The printer will <strong>pause automatically</strong> at the designated layer and display
-            a message, likely stating "Filament Change Required" or similar. <strong>DO NOT press 'Resume' on this
+            a message, likely stating "Printing was paused by the user" or similar. <strong>DO NOT press 'Resume Printing' on this
               screen!</strong></li>
           <li>Instead of resuming, locate and press the <strong>'X' button</strong> (or
             'Cancel' / 'Back' depending on your printer's UI) to exit this prompt.
           </li>
-          <li>Navigate to the <strong>'Filament' or 'Change Filament' section</strong> on your printer's
+          <li>Navigate to the <strong>'Filament' section</strong> on your printer's
             screen.
           </li>
           <li>Perform the <strong>manual filament change</strong> following your printer's usual
@@ -298,6 +299,13 @@
         helpSection.style.display = "none"; // Hide the section
       }
     });
+    
+  kofiWidgetOverlay.draw('pressntr', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
   </script>
 </body>
 
