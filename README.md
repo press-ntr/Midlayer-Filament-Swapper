@@ -55,9 +55,9 @@ Choose **ONE** of the following methods to transfer your patched G-code file to 
 
 Once your print starts, the printer will pause at specific points for you to swap filaments. Here’s how to handle it:
 
-1.  The printer will **pause automatically** at the designated layer and display a message, likely stating "Filament Change Required" or similar. **DO NOT press 'Resume' on this screen!**
+1.  The printer will **pause automatically** at the designated layer and display a message, likely stating "PRinting was paused by the user" or similar. **DO NOT press 'Resume' on this screen!**
 2.  Instead of resuming, locate and press the **'X' button** (or 'Cancel' / 'Back' depending on your printer's UI) to exit this prompt.
-3.  Navigate to the **'Filament' or 'Change Filament' section** on your printer's screen.
+3.  Navigate to the **'Filament' section** on your printer's screen.
 4.  Perform the **manual filament change** following your printer's usual procedure. This typically involves unloading the old filament, loading the new filament, and purging any old material until the new color is clean.
 5.  Once the filament change is complete, return to the **main print screen** on your printer.
 6.  Finally, press **'Resume'** to continue your print. The printer will seamlessly pick up where it left off with the new filament!
@@ -65,3 +65,7 @@ Once your print starts, the printer will pause at specific points for you to swa
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have suggestions for improvements, bug fixes, or new features.
+
+## Donating
+
+Found this useful? Consider donating with Ko-Fi: https://ko-fi.com/pressntr
