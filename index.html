@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filament Swapper</title>
+  
+  <title>Bambu Lab G-Code Patcher | Multi-Color Prints Without AMS | Midlayer Filament Swapper</title>
+  
+  <meta name="description"
+    content="Easily create multi-color 3D prints on your Bambu Lab printer without an AMS! Upload your G-code and patch it instantly for perfect manual filament changes. Free and open-source.">
+  
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
   <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
@@ -12,9 +17,16 @@
 
 <body>
   <div class="container">
-    <h1><span>🛠️</span> No AMS, No Problem!</h1>
+    
+    <h1>Bambu Lab G-Code Patcher: Multi-Color Prints Without AMS</h1>
+    
+    <h2 class="subtitle visually-hidden">The Midlayer Filament Swapper: A Free Bambu Lab G-Code Patcher</h2>
+    <h3><span>🛠️</span> No AMS, No Problem!</h3>
+
     <p>Upload a G-code file that was created with multiple filaments, then download the patched file. <a
         href="#helpSection" id="helpLink">Need help?</a></p>
+    
+    
 
     <div id="file-upload-area" class="file-upload-area">
       <input type="file" id="file-input" accept=".gcode">
@@ -315,5 +327,4 @@
     });
   </script>
 </body>
-
 </html>
